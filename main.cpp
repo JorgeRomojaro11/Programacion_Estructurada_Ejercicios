@@ -17,4 +17,9 @@ estudiante2->edad = 22;
 estudiante2->promedio = 90.0;
 strcpy(estudiante2->nombre, "Xokas Garcia");
 
+struct Estudiante *pEstudiante;
+pEstudiante = &estudiante1;
+printf("Nombre: %s, Edad: %d, Promedio: %f\n", pEstudiante->nombre, pEstudiante->edad, pEstudiante->promedio);
+
+
 
