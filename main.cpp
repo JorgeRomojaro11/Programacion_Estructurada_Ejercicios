@@ -21,5 +21,28 @@ struct Estudiante *pEstudiante;
 pEstudiante = &estudiante1;
 printf("Nombre: %s, Edad: %d, Promedio: %f\n", pEstudiante->nombre, pEstudiante->edad, pEstudiante->promedio);
 
+int main() {
+    struct Lista listaEstudiantes;
+    listaEstudiantes.inicio = NULL;
+
+    struct Estudiante estudiante1 = {"Juan Perez", 20, 85.5};
+    struct Estudiante estudiante2 = {"Maria Rodriguez", 22, 90.0};
+
+    agregarEstudiante(&listaEstudiantes, estudiante1);
+    agregarEstudiante(&listaEstudiantes, estudiante2);
+
+    printf("Lista de Estudiantes:\n");
+    verEstudiantes(&listaEstudiantes);
+
+    char nombreEliminar[50];
+    printf("Ingrese el nombre del estudiante a eliminar: ");
+    scanf("%s", nombreEliminar);
+    eliminarEstudiante(&listaEstudiantes, nombreEliminar);
+
+    printf("Lista después de eliminar estudiante:\n");
+    verEstudiantes(&listaEstudiantes);
+
+    return 0;
+}
 
 
