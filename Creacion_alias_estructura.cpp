@@ -1,12 +1,21 @@
 #include <stdio.h>
 #include <string.h>
 
-// Definir la estructura Estudiante
 struct Estudiante {
     char nombre[50];
     int edad;
     float promedio;
 };
-
-// Crear un alias para la estructura Estudiante usando typedef
 typedef struct Estudiante Estudiante;
+void imprimirEstudiante(Estudiante estudiante) {
+    printf("Nombre: %s, Edad: %d, Promedio: %f\n", estudiante.nombre, estudiante.edad, estudiante.promedio);
+}
+
+int main() {
+    Estudiante nuevoEstudiante = {"Eustaquio Habichuela", 33, 73.25};
+    printf("Nuevo Estudiante:\n");
+    imprimirEstudiante(nuevoEstudiante);
+
+    return 0;
+}
+

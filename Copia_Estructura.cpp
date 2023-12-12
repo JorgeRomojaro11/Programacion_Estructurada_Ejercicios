@@ -19,7 +19,6 @@ struct Estudiante copiarEstudiante(struct Estudiante original) {
 
 int main() {
     struct Estudiante estudianteOriginal = {"Marta Diaz", 20, 85.5};
-
     struct Estudiante estudianteCopia = copiarEstudiante(estudianteOriginal);
 
     printf("Original: Nombre: %s, Edad: %d, Promedio: %f\n", estudianteOriginal.nombre, estudianteOriginal.edad, estudianteOriginal.promedio);
