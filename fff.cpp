@@ -57,8 +57,8 @@ int main() {
     struct Lista listaEstudiantes;
     listaEstudiantes.inicio = NULL;
 
-    struct Estudiante estudiante1 = {"Marta Diaz", 20, 85.5};
-    struct Estudiante estudiante2 = {"Xocas", 22, 90.0};
+    struct Estudiante estudiante1 = {"Juan Perez", 20, 85.5};
+    struct Estudiante estudiante2 = {"Maria Rodriguez", 22, 90.0};
 
     agregarEstudiante(&listaEstudiantes, estudiante1);
     agregarEstudiante(&listaEstudiantes, estudiante2);
@@ -76,6 +76,4 @@ int main() {
 
     return 0;
 }
-
-
 
